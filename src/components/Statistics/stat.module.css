@@ -1,0 +1,18 @@
+.section {
+  border: 1px solid black;
+  width: max-content;
+}
+.title {
+  text-align: center;
+}
+.statList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.statListItem {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+}

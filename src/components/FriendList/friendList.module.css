@@ -1,0 +1,23 @@
+.friendList {
+  border: 1px solid red;
+}
+.friendListItem {
+  width: 300px;
+  border: 1px solid red;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.status {
+  width: 10px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.isOnline {
+  composes: status;
+  background-color: green;
+}
+.isOffline {
+  composes: status;
+  background-color: red;
+}

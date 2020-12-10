@@ -1,0 +1,19 @@
+.profile {
+  /* background: green; */
+  width: 300px;
+  border: 1px solid gray;
+}
+
+.avatar {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.name {
+  font-weight: 800;
+}
+.tag,
+.name,
+.location {
+  text-align: center;
+}
