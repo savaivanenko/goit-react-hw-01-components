@@ -1,19 +1,17 @@
 import Profile2 from './components/Profile/Profile2';
-import Stats from './components/Statistics/Statistics';
+import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
-import user from './user.json';
-import usersData from './statistical-data.json';
-import friends from './friends.json';
-import transaction from './transaction.json';
+import user from './data/user.json';
+import usersData from './data/statistical-data.json';
+import friends from './data/friends.json';
+import transaction from './data/transaction.json';
 
 export default function App() {
-  // console.log(props);
   return (
     <div>
       <Profile2
-        // key={i}
         name={user.name}
         tag={user.tag}
         location={user.location}
@@ -23,7 +21,7 @@ export default function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Stats options={usersData} />
+      <Statistics options={usersData} />
 
       <FriendList options={friends} />
 

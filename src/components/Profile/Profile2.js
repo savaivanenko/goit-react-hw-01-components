@@ -1,7 +1,9 @@
+import Stats from './Stats';
+
 import PropTypes from 'prop-types';
 import styles from './profile.module.css';
 
-function Profile2({ avatar, name, tag, location, followers, views, likes }) {
+function Profile2({ avatar, name, tag, location, stats }) {
   return (
     <div className={styles.profile}>
       <div className={styles.description}>
@@ -11,20 +13,7 @@ function Profile2({ avatar, name, tag, location, followers, views, likes }) {
         <p className={styles.location}>{location}</p>
       </div>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
-      </ul>
+      <Stats {...stats} />
     </div>
   );
 }
