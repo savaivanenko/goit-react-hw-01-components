@@ -2,11 +2,11 @@ import user from './data/user.json';
 import data from './data/statData.json';
 import friends from './data/friends.json';
 import transactions from './data/transaction.json';
-import { Statistic } from './Statistic/Statistic';
-import { FriendList } from './FriendList/FriendList';
-import { TransactionHistory } from './Transactions/TransactionHistory';
-import { Profile } from './Profile/Profile';
-import { Container } from './App.styled';
+import { Statistic } from './components/Statistic/Statistic';
+import { FriendList } from './components/FriendList/FriendList';
+import { TransactionHistory } from './components/Transactions/TransactionHistory';
+import { Profile } from './components/Profile/Profile';
+import { Container } from './components/App.styled';
 
 export const App = () => {
   return (
